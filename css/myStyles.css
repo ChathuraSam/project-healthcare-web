@@ -1,0 +1,29 @@
+#indexCenter {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#loginCenter {
+    margin-top: 50px;
+    width: 300px;
+    border-radius: 10px;
+    border: 10px;
+    padding: 25px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+#indexText {
+    text-align: center;
+}
+
+#loginForm{
+    width: 500px;
+    margin: 0 auto;
+}
