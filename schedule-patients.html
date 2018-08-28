@@ -64,32 +64,44 @@
     </nav>
 
     <h1 style="text-align: center">Medicare</h1>
-    <h3 style="margin-left:20px">Generate Bill</h3>
+    <h3 style="margin-left:20px">Schedule Patients</h3>
 
 
-    <form id="bill-generate">
-        <div class="form-group">
-            <label for="formGroupExampleInput">Bill Number</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
-        </div>
-        <div class="form-group">
-            <label for="formGroupExampleInput2">Patient ID</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-        </div>
-        <div class="form-group">
-            <label for="formGroupExampleInput2">Patient Name</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-        </div>
-        <div class="form-group">
-            <label for="formGroupExampleInput2">Bill Date</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="yyyy-mm-dd">
-        </div>
-        <div class="form-group">
-            <label for="formGroupExampleInput2">Total Bill</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-        </div>
-        <button type="button" class="btn btn-primary btn-sm" style="width: 450px">Print</button>
-    </form>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Patient ID</th>
+                    <th>Name</th>
+                    <th>Problem</th>
+                    <th>Date To Visit</th>
+                    <th>Time To Visit</th>
+                    <th>Doctor To Visit</th>
+                    <th>Schedule</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PID01</td>
+                    <td>Silva</td>
+                    <td>General</td>
+                    <td>15/8/18</td>
+                    <td>9.00 AM</td>
+                    <td>DID01</td>
+                    <td>Schedule</td>
+                </tr>
+                <tr>
+                    <td>PID02</td>
+                    <td>Jaya</td>
+                    <td>Respiratory</td>
+                    <td>19/6/18</td>
+                    <td>3.00 PM</td>
+                    <td>DID02</td>
+                    <td>Schedule</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 
 
