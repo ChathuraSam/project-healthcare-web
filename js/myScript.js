@@ -25,7 +25,7 @@ function date_time()
         {
                 s = "0"+s;
         }
-        result = ''+days[day]+' '+months[month]+' '+d+' '+year+' \n'+h+':'+m+':'+s;
+        result = ''+days[day]+' '+months[month]+' '+d+' '+year+' '+h+':'+m+':'+s;
         lblDate.innerHTML = result;
         setTimeout('date_time("'+lblDate+'");','1000');
         return true;
