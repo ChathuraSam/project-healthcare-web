@@ -17,6 +17,18 @@
     position: relative;
 }
 
+#bill-generate {
+    margin-top: 50px;
+    width: 500px;
+    border-radius: 10px;
+    border: 10px;
+    padding: 25px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #ecf0f1;
+    
+}
+
 
 
 #indexText {
