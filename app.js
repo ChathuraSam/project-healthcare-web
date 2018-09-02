@@ -3,6 +3,7 @@ var app     = express();
 var path    = require("path");
 var mysql = require('mysql');
 var bodyParser = require('body-parser');
+var alert = require('alert-node');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -40,24 +41,28 @@ app.post('/submit',function(req,res){
   res.write('You sent the email "' + req.body.password+'".\n');
 
   //var query1 = "INSERT INTO user VALUES ('"+username+"', '"+email+"','"+username+"','"+name+"')";
-  var query2 = "select * from user";
-
+  var query2 = "select * from user where username = '"+username+"' and password = '"+password+"'";
+  console.log(query2);
   //con.connect(function(err) {
 pool.query(query2,function(error,results,fields) {
   if(error) throw error;
-	console.log('The solution is: ', results[4].username);
+	//console.log('The solution is: ', results[4].username);
     //console.log('Inserted record');
 
-    if(results[4].username = username){
-      console.log(results[4].username);
+
+    /**
+     if(results[4].username = username){
+      //console.log(results[4].username);
+      console.log(results[4].password);
+      alert('Login Successfull');
     }
     
     else{
       console.log("not equal");
       console.log(results[4].username);
-      console.log(this.username);
-      alert('Login Successfull');
     }
+    */
+   
 });
 
 })
