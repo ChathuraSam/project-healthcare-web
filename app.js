@@ -46,22 +46,18 @@ app.post('/submit',function(req,res){
   //con.connect(function(err) {
 pool.query(query2,function(error,results,fields) {
   if(error) throw error;
-	//console.log('The solution is: ', results[4].username);
-    //console.log('Inserted record');
-
-
-    /**
-     if(results[4].username = username){
-      //console.log(results[4].username);
-      console.log(results[4].password);
+    
+  if(results[0]!=null){
+    if(results[0].username = username && results[0].username == username){
       alert('Login Successfull');
     }
     
-    else{
-      console.log("not equal");
-      console.log(results[4].username);
-    }
-    */
+  }
+  else{
+    alert('Login Failed');
+  }
+    
+
    
 });
 
