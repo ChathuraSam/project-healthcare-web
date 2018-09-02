@@ -67,50 +67,50 @@
     <h3 style="margin-left:20px">Create Account</h3>
 
 
-    <form id="create-account">
+    <form id="create-account" action="/submitaccount" method="POST">
         <div class="form-group">
-            <label for="formGroupExampleInput">ID</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+            <label for="ID">ID</label>
+            <input type="text" class="form-control" id="ID" name="ID" placeholder="">
         </div>
         <div class="form-group">
-            <label for="formGroupExampleInput2">First Name</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+            <label for="FirstName">First Name</label>
+            <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="">
         </div>
         <div class="form-group">
-            <label for="formGroupExampleInput2">Last Name</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+            <label for="LastName">Last Name</label>
+            <input type="text" class="form-control" id="LastName" name="LastName" placeholder="">
         </div>
         <div class="form-group">
-            <label for="formGroupExampleInput2">Age</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+            <label for="Age">Age</label>
+            <input type="text" class="form-control" name="Age" placeholder="">
         </div>
         <div class="form-group">
-            <label for="formGroupExampleInput2">Address</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+            <label for="Address">Address</label>
+            <input type="text" class="form-control" name="Address" placeholder="">
         </div>
         <div class="form-group">
-            <label for="formGroupExampleInput2">Couduct Number</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+            <label for="CouductNumber">Couduct Number</label>
+            <input type="text" class="form-control" name="CouductNumber" placeholder="">
         </div>
         <div class="form-group">
-            <label for="formGroupExampleInput2">Email ID</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+            <label for="EmailID">Email ID</label>
+            <input type="text" class="form-control" name="EmailID" placeholder="">
         </div>
         <div class="form-group">
-            <label for="formGroupExampleInput2">Doctor Specialization</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+            <label for="DoctorSpecialization">Doctor Specialization</label>
+            <input type="text" class="form-control" name="DoctorSpecialization" placeholder="">
         </div>
         <div class="form-group">
-            <label for="formGroupExampleInput2">Qualification</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+            <label for="Qualification">Qualification</label>
+            <input type="text" class="form-control" name="Qualification" placeholder="">
         </div>
         <div class="form-group">
-            <label for="formGroupExampleInput2">Patient Problem</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+            <label for="PatientProblem">Patient Problem</label>
+            <input type="text" class="form-control" name="PatientProblem" placeholder="">
         </div>
-        <button type="button" class="btn btn-success">Check</button>
-        <button type="button" class="btn btn-primary">Save</button>
-        <button type="button" class="btn btn-warning">Cancel</button>
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+    
     </form>
 
 
